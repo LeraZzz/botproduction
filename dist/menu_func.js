@@ -20,19 +20,6 @@ module.exports = {
         };
 
         tg.sendMessage(callbackQuery.message.chat.id, 'Пожалуйста, оставьте ваш контактный номер для того, чтобы наш менеджер мог связаться с Вами 👇', options);
-
-        User.create({
-
-            first_name: message.from.first_name,
-            last_name: message.from.last_name,
-            message_text: message.text,
-            chat_id: message.chat.id,
-            date: message.date,
-            number: String
-        }, function (err) {
-
-            if (err) return handleError(err);
-        });
     },
 
     goToFAQ: function goToFAQ(tg, callbackQuery) {

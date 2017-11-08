@@ -23,7 +23,7 @@ module.exports = {
             '• Озоновый крем ночной. Релакс. PV 500 (50 мл)\n' +
             '• Озонированное масло ОТРИ® 6 000 (25 мл)\n' +
             '• Инструкция по применению'+
-            '<a href="https://pp.userapi.com/c841222/v841222340/28c70/TQ2wm8UAHEk.jpg">&#8205;</a>\n'
+            '<a href="https://vk.com/photo-154365435_456239176.jpg">&#8205;</a>\n'
 
         let Button4 = {
             text: '🔙',
@@ -58,7 +58,7 @@ module.exports = {
     },
 
     goToComplexHair1: function(tg, callbackQuery) {
-        let text ='<a href="https://pp.userapi.com/c840733/v840733221/11329/9pkXbnBhIBg.jpg">&#8205;</a>'+
+        let text ='<a href="https://vk.com/photo-154365435_456239174">&#8205;</a>'+
             '<b>Комплекс\n'+'«Полное восстановление волос»\n</b>' +
             '<b>3 490 руб\n</b>'+
             '\n'+
@@ -104,7 +104,7 @@ module.exports = {
 
     },
     goToComplexBody1: function(tg, callbackQuery) {
-        let text ='<a href="https://pp.userapi.com/c841639/v841639221/1e782/axbuHrNwD1c.jpg">&#8205;</a>'+
+        let text ='<a href="https://vk.com/photo-154365435_456239177">&#8205;</a>'+
             '<b>Комплекс\n'+ '«Идеальное тело»\n</b>' +
             '<b>4 590 руб\n</b>' +
             '\n'+
