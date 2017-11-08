@@ -78,8 +78,7 @@ module.exports = {
                         text: 'Комплексный уход',
                         callback_data: 'catalogComplex'
                     }
-            
-                    let Button6 = {
+                      let Button6 = {
                         text: 'Озонированное масло О3',
                         callback_data: 'catalogOil'
                     }
@@ -146,20 +145,7 @@ module.exports = {
     },
 
     goToBeforeAfter1: function goToBeforeAfter1(tg, callbackQuery) {
-        var text = 'Результаты применения косметики<b> OZONE BOX </b>: \n' +
-        //'<a href=" https://pp.userapi.com/c841120/v841120315/24aac/LyFIEe8q5DQ.jpg">&#8205;</a>'
-        '<a href="https://pp.userapi.com/c824204/v824204587/d36b/tW3HKXnWCI8.jpg">&#8205;</a>\n';
-        //'<a href=" https://pp.userapi.com/c841120/v841120315/24ab4/2nbC5yIg-qs.jpg">&#8205;</a>\n'
-        /*'<a href=" https://pp.userapi.com/c841120/v841120315/24abd/cimEGZ6GRfc.jpg">&#8205;</a>\n'+
-        '<a href=" https://pp.userapi.com/c841120/v841120315/24ac6/eozjunCDFwo.jpg">&#8205;</a>\n'+
-        '<a href=" https://pp.userapi.com/c841120/v841120315/24ad8/RpFlG_LX5fQ.jpg">&#8205;</a>\n'+
-        '<a href=" https://pp.userapi.com/c841120/v841120315/24ae1/0S3jqnd9dsw.jpg">&#8205;</a>\n'+
-        '<a href=" https://pp.userapi.com/c841120/v841120315/24b04/h7b3Btfdmro.jpg">&#8205;</a>\n'+
-         '<a href="https://pp.userapi.com/c841120/v841120315/24afc/hW-1_rJiw4U.jpg">&#8205;</a>\n'+
-         '<a href="https://pp.userapi.com/c841120/v841120315/24af3/la9-v9tpFno.jpg">&#8205;</a>\n'+
-         '<a href="https://pp.userapi.com/c840729/v840729902/eea0/ZXZYLuaNkG4.jpg">&#8205;</a>\n'*/
-        //  '<a href="">&#8205;</a>\n'+
-
+        var text = 'Результаты применения косметики<b> OZONE BOX </b>: \n' + '<a href="https://pp.userapi.com/c824204/v824204587/d36b/tW3HKXnWCI8.jpg">&#8205;</a>\n';
 
         var Button1 = {
             text: '🔙',

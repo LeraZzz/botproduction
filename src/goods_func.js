@@ -1,5 +1,7 @@
 module.exports = {
+
     goToComplexFace1: function(tg, callbackQuery) {
+
         let text = '<b> Комплекс\n'+'«Безупречно чистая кожа»\n</b>' +
             '<b>3 990 руб\n</b>' +
             '\n'+
@@ -58,6 +60,7 @@ module.exports = {
     },
 
     goToComplexHair1: function(tg, callbackQuery) {
+
         let text ='<a href="https://vk.com/photo-154365435_456239174">&#8205;</a>'+
             '<b>Комплекс\n'+'«Полное восстановление волос»\n</b>' +
             '<b>3 490 руб\n</b>'+
@@ -104,6 +107,7 @@ module.exports = {
 
     },
     goToComplexBody1: function(tg, callbackQuery) {
+
         let text ='<a href="https://vk.com/photo-154365435_456239177">&#8205;</a>'+
             '<b>Комплекс\n'+ '«Идеальное тело»\n</b>' +
             '<b>4 590 руб\n</b>' +
