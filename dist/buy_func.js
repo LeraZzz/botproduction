@@ -63,7 +63,7 @@ module.exports = {
         tg.editMessageText(text, options);
     },
 
-    gotoMiniBox1: function gotoMiniBox1(tg, callbackQuery) {
+    buyMiniBox1: function buyMiniBox1(tg, callbackQuery) {
 
         var text = '<b>MiniOzoneBox#1</b>\n' + 'Восстановление волос' + '\n' + '\n' + '<b>В комплекс входит:\n</b>' + '• Маска для восстановления волос PV 1000' + '\n' + '• Озонированное оливковое масло ОТРИ 6000' + '\n' + '\n';
         '<b>2100 руб</b>' + '\n' + '\n';
@@ -86,7 +86,7 @@ module.exports = {
         tg.editMessageText(text, options);
     },
 
-    gotoMiniBox2: function gotoMiniBox2(tg, callbackQuery) {
+    buyMiniBox2: function buyMiniBox2(tg, callbackQuery) {
 
         var text = '<b>MiniOzoneBox#2</b>\n' + 'Активатор роста волос ' + '\n' + '\n' + '<b>В комплекс входит:\n</b>' + '• Маска озоновый активатор роста PV 1500' + '\n' + '• Озонированное оливковое масло ОТРИ 6000' + '\n' + '\n';
         '<b>2750 руб</b>' + '\n' + '\n';
@@ -109,7 +109,7 @@ module.exports = {
         tg.editMessageText(text, options);
     },
 
-    gotoMiniBox3: function gotoMiniBox3(tg, callbackQuery) {
+    buyMiniBox3: function buyMiniBox3(tg, callbackQuery) {
 
         var text = '<b>MiniOzoneBox#3</b>\n' + 'Идеальная чистая кожа ' + '\n' + '\n' + '<b>В комплекс входит:\n</b>' + '• Дневной крем PV 500 экспресс-уход' + '\n' + '• Озонированное оливковое масло ОТРИ 6000 для точечного применения' + '\n' + '\n';
         '<b>2400 руб</b>' + '\n' + '\n';
@@ -137,7 +137,7 @@ module.exports = {
         tg.editMessageText(text, options);
     },
 
-    gotoMiniBox4: function gotoMiniBox4(tg, callbackQuery) {
+    buyMiniBox4: function buyMiniBox4(tg, callbackQuery) {
 
         var text = '<b>MiniOzoneBox#4</b>\n' + 'Ночной лайт ' + '\n' + '\n' + '<b>В комплекс входит:\n</b>' + '• Ночной крем PV 500 глубокое увлажнение' + '\n' + '• Озонированное оливковое масло ОТРИ 6000 для точечного применения' + '\n' + '\n';
         '<b>2400 руб</b>' + '\n' + '\n';
@@ -160,7 +160,7 @@ module.exports = {
         tg.editMessageText(text, options);
     },
 
-    gotoMiniBox5: function gotoMiniBox5(tg, callbackQuery) {
+    buyMiniBox5: function buyMiniBox5(tg, callbackQuery) {
 
         var text = '<b>MiniOzoneBox#5</b>\n' + 'Идеальная чистая кожа: для сухой и нормальной кожи ' + '\n' + '\n' + '<b>В комплекс входит:\n</b>' + '• OzoneBeauty ® Крем для профессионального ухода PV 2000' + '\n' + '• Озонированное оливковое масло ОТРИ 6000 для точечного применения' + '\n' + '\n';
         '<b>2400 руб</b>' + '\n' + '\n';
@@ -183,7 +183,7 @@ module.exports = {
         tg.editMessageText(text, options);
     },
 
-    gotoMiniBox6: function gotoMiniBox6(tg, callbackQuery) {
+    buyMiniBox6: function buyMiniBox6(tg, callbackQuery) {
 
         var text = '<b>MiniOzoneBox#6</b>\n' + 'Идеальная чистая кожа: для комбинированной и жирной кожи  ' + '\n' + '\n' + '<b>В комплекс входит:\n</b>' + '• OzoneBeauty ® Крем для профессионального ухода PV 2000' + '\n' + '• Озонированное оливковое масло ОТРИ 6000 для точечного применения' + '\n' + '\n';
         '<b>2400 руб</b>' + '\n' + '\n';

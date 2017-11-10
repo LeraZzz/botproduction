@@ -87,32 +87,32 @@ module.exports = {
 
         }
 
-        let Button1 = {
+        let Button5 = {
             text: 'miniOzoneBox#1 Восстановление волос',
             callback_data: 'mini1Cmd'
         }
 
-        let Button3 = {
+        let Button6 = {
             text: 'miniOzoneBox#3 Дневной лайт',
             callback_data: 'mini2Cmd'
         }
 
-        let Button4 = {
+        let Button7 = {
             text: 'miniOzoneBox#4 Ночной лайт',
             callback_data: 'mini3Cmd'
         }
 
-        let Button2 = {
+        let Button8 = {
             text: 'miniOzoneBox#2 Активатор роста волос',
             callback_data: 'mini4Cmd'
         }
 
-        let Button5 = {
+        let Button9 = {
             text: 'miniOzoneBox#5 Для сухой и нормальной кожи',
             callback_data: 'mini5Cmd'
         }
 
-        let Button6 = {
+        let Button10 = {
             text: 'miniOzoneBox#6 Для комбинированной и жирной кожи',
             callback_data: 'mini6Cmd'
         }
