@@ -4,7 +4,7 @@ import goods_func from './goods_func'
 import buy_func from './buy_func'
 import start_functions from './start_functions.js'
 import menu_func from './menu_func.js'
-
+import vs from './vs.js'
 const botan = require('botanio')('786f747c-6fe7-4a7f-95a6-c8ef510a59f0')
 
 
@@ -24,6 +24,7 @@ function create() {
 
 
 function onMessage(message) {
+
     console.log('message:', message)
 
     botan.track(message, 'Start', (err) => {
@@ -59,16 +60,6 @@ function onMessage(message) {
     }
 }
 
-/*function onContact(contact){
-    console.log('YEAAHHH')
-    let t = contact.first_name
-    var text ='Заказ звонка:'+ //contact.first_name + contact.last_name + contact.phone_number
-
-  let textInfo = Informat.toString()
-    tg.sendMessage(-1001126980476, text)
-
-}*/
-
 function onCallbackQuery(callbackQuery) {
 
     console.log('callbackQuery:', callbackQuery);
@@ -80,6 +71,70 @@ function onCallbackQuery(callbackQuery) {
     else if (callbackQuery.data === 'menuCmd') {
 
         const goToMenu = start_functions.sendStartMessage2(tg, callbackQuery)
+    }
+
+    else if (callbackQuery.data === 'mini1Cmd') {
+
+        const goToMiniBox1_1 = goods_func.gotoMiniBox1(tg, callbackQuery)
+    }
+    else if (callbackQuery.data === 'mini2Cmd') {
+
+        const goToMiniBox2_1 = goods_func.gotoMiniBox2(tg, callbackQuery)
+    }
+
+    else if (callbackQuery.data === 'mini3Cmd') {
+
+        const goToMiniBox3_1 = goods_func.gotoMiniBox3(tg, callbackQuery)
+    }
+
+
+    else if (callbackQuery.data === 'mini4Cmd') {
+
+        const goToMiniBox4_1 = goods_func.gotoMiniBox4(tg, callbackQuery)
+    }
+
+
+    else if (callbackQuery.data === 'mini5Cmd') {
+
+        const goToMiniBox5_1 = goods_func.gotoMiniBox5(tg, callbackQuery)
+    }
+
+
+    else if (callbackQuery.data === 'mini6Cmd') {
+
+        const goToMiniBox6_1 = goods_func.gotoMiniBox6(tg, callbackQuery)
+    }
+
+
+    else if (callbackQuery.data === 'buyMiniBox1Cmd') {
+
+        const buyMiniBox1_1 = buy_func.buyMiniBox1(tg, callbackQuery)
+    }
+
+
+    else if (callbackQuery.data === 'buyMiniBox2Cmd') {
+
+        const buyMiniBox2_1 = buy_func.buyMiniBox2(tg, callbackQuery)
+    }
+
+    else if (callbackQuery.data === 'buyMiniBox3Cmd') {
+
+        const buyMiniBox3_1 = buy_func.buyMiniBox3(tg, callbackQuery)
+    }
+
+    else if (callbackQuery.data === 'buyMiniBox5Cmd') {
+
+        const buyMiniBox4_1 = buy_func.buyMiniBox4(tg, callbackQuery)
+    }
+
+    else if (callbackQuery.data === 'buyMiniBox5Cmd') {
+
+        const buyMiniBox5_1 = buy_func.buyMiniBox5(tg, callbackQuery)
+    }
+
+    else if (callbackQuery.data === 'buyMiniBox6Cmd') {
+
+        const buyMiniBox6_1 = buy_func.buyMiniBox(tg, callbackQuery)
     }
 
 
@@ -113,23 +168,24 @@ function onCallbackQuery(callbackQuery) {
         const goToBeforeAfter = menu_func.goToBeforeAfter1(tg, callbackQuery)
     }
 
-    /*
-    else if (callbackQuery.data === 'catalogSkin') {
+    else if (callbackQuery.data === 'hairVSCmd') {
 
-        const goToCatalogSkin = goToCatalogSkin1(callbackQuery)
+        const hairVS1 = vs.hairVS(tg, callbackQuery)
+    }
+
+    else if (callbackQuery.data === 'skinVSCmd') {
+
+        const skinVS1 = vs.skinVS(tg, callbackQuery)
+    }
+
+    else if (callbackQuery.data === 'bodyVSCmd') {
+
+        const bodyVS1 = vs.bodyVS(tg, callbackQuery)
     }
 
 
-    else if (callbackQuery.data === 'catalogOil') {
 
-        const goToCatalogOil = goToCatalogOil1(callbackQuery)
-    }
 
-    else if (callbackQuery.data === 'catalogComplex') {
-
-        const goToCatalogComplex = goToCatalogComplex1(tg, callbackQuery)
-    }
-*/
     else if (callbackQuery.data === 'FAQCmd') {
         const goToFromMenu2 = menu_func.goToFAQ(tg, callbackQuery)
     }

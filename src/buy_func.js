@@ -156,7 +156,7 @@ module.exports = {
 
     },
 
-    gotoMiniBox1: function (tg, callbackQuery) {
+    buyMiniBox1: function (tg, callbackQuery) {
 
         let text = '<b>MiniOzoneBox#1</b>\n' +
             'Восстановление волос' + '\n'+ '\n'+
@@ -192,7 +192,7 @@ module.exports = {
 
     },
 
-    gotoMiniBox2: function (tg, callbackQuery) {
+    buyMiniBox2: function (tg, callbackQuery) {
 
         let text = '<b>MiniOzoneBox#2</b>\n' +
             'Активатор роста волос ' + '\n' + '\n' +
@@ -230,7 +230,7 @@ module.exports = {
 
     },
 
-    gotoMiniBox3: function (tg, callbackQuery) {
+    buyMiniBox3: function (tg, callbackQuery) {
 
         let text = '<b>MiniOzoneBox#3</b>\n' +
             'Идеальная чистая кожа ' + '\n'+ '\n'+
@@ -272,7 +272,7 @@ module.exports = {
 
     },
 
-    gotoMiniBox4: function (tg, callbackQuery) {
+    buyMiniBox4: function (tg, callbackQuery) {
 
         let text = '<b>MiniOzoneBox#4</b>\n' +
             'Ночной лайт ' + '\n'+ '\n'+
@@ -310,7 +310,7 @@ module.exports = {
 
     },
 
-    gotoMiniBox5: function (tg, callbackQuery) {
+    buyMiniBox5: function (tg, callbackQuery) {
 
         let text = '<b>MiniOzoneBox#5</b>\n' +
             'Идеальная чистая кожа: для сухой и нормальной кожи ' + '\n'+ '\n'+
@@ -348,7 +348,7 @@ module.exports = {
 
     },
 
-    gotoMiniBox6: function (tg, callbackQuery) {
+    buyMiniBox6: function (tg, callbackQuery) {
 
         let text = '<b>MiniOzoneBox#6</b>\n' +
             'Идеальная чистая кожа: для комбинированной и жирной кожи  ' + '\n' + '\n' +
