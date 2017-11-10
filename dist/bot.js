@@ -62,13 +62,15 @@ function onMessage(message) {
         });
         return;
     } else if (message.text && message.text.toLowerCase() === '/start') {
-        _start_functions2.default.sendStartMessage(tg, message);
+        _start_functions2.default.helloMessage(tg, message);
         return;
     } else if (message.contact !== undefined && message.contact !== 0) {
         var text = 'Заказ обратного звонка: ' + message.contact.first_name + ' ' + message.contact.last_name + ' ' + message.contact.phone_number;
         tg.sendMessage(-1001126980476, text);
+    } else if (message.text == '🔹 Главное меню') {
+        var sendStartMessage1 = _start_functions2.default.sendStartMessage(tg, message);
     } else {
-        tg.sendMessage(message.chat.id, '<b>Данная команда не поддерживается! \n</b>' + 'Испоьзуйте <b>/help</b> для справки!', {
+        tg.sendMessage(message.chat.id, '<b>Данная команда не поддерживается! \n</b>' + 'Используйте <b>/help</b> для справки!', {
             parse_mode: 'HTML'
         });
         var _text = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' + 'текст: ' + message.text;

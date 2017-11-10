@@ -42,7 +42,7 @@ function onMessage(message) {
     }
 
     else if (message.text && message.text.toLowerCase() === '/start') {
-        start_functions.sendStartMessage(tg, message)
+        start_functions.helloMessage(tg, message)
         return
     }
 
@@ -50,9 +50,13 @@ function onMessage(message) {
         let text = 'Заказ обратного звонка: ' + message.contact.first_name + ' ' + message.contact.last_name + ' ' + message.contact.phone_number
         tg.sendMessage(-1001126980476, text)
     }
+    else if (message.text == '🔹 Главное меню' ){
+        const sendStartMessage1 = start_functions.sendStartMessage(tg, message)
+    }
+
 
     else {
-        tg.sendMessage(message.chat.id, '<b>Данная команда не поддерживается! \n</b>' + 'Испоьзуйте <b>/help</b> для справки!', {
+        tg.sendMessage(message.chat.id, '<b>Данная команда не поддерживается! \n</b>' + 'Используйте <b>/help</b> для справки!', {
             parse_mode: 'HTML'
         })
         let text = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' +
@@ -65,7 +69,7 @@ function onCallbackQuery(callbackQuery) {
 
     console.log('callbackQuery:', callbackQuery);
 
-    if (callbackQuery.data === 'catalogCmd') {
+     if (callbackQuery.data === 'catalogCmd') {
         const goToFromMenu1 = menu_func.goToCatalog(tg, callbackQuery)
     }
 

@@ -1,25 +1,25 @@
-"use strict";
+'use strict';
 
 module.exports = {
 
     goToCallBack: function goToCallBack(tg, callbackQuery) {
+        var text = 'Чтобы наш менеджер тебе перезвонил, воспользуйся кнопкой <b>"Заказать звонок"</b> внизу на клавиатуре (если она скрыта, нажмите значок  в конце поля для набора текста) и оставьте свой номер. Мы обязательно перезвоним тебе в течение часа!' + '\n' + 'Также ты можешь уточнить желаемое время звонка, отправив в чат сообщение вида: <b>Время  XXX</b>, где вместо <b>XXX</b> следует указать удобный для тебя промежуток времени. ';
 
-        var options = {
-            "parse_mode": "Markdown",
-            "reply_markup": {
-                "force_reply": true,
-                //"one_time_keyboard": true,
-                "resize_keyboard": true,
-                // "remove_keyboard": true,
-                "callback_data": "numberQuery",
-                "keyboard": [[{
-                    text: "Заказать звонок менеджера",
-                    request_contact: true
-                }]]
-            }
+        var Button1 = {
+            text: '🔙',
+            callback_data: 'menuCmd'
         };
 
-        tg.sendMessage(callbackQuery.message.chat.id, 'Пожалуйста, оставьте ваш контактный номер для того, чтобы наш менеджер мог связаться с Вами 👇', options);
+        var options = Object.assign({}, {
+            parse_mode: 'HTML',
+            reply_markup: JSON.stringify({
+                inline_keyboard: [[Button1]]
+            })
+        }, {
+            message_id: callbackQuery.message.message_id,
+            chat_id: callbackQuery.message.chat.id
+        });
+        tg.editMessageText(text, options);
     },
 
     goToFAQ: function goToFAQ(tg, callbackQuery) {
@@ -160,20 +160,20 @@ module.exports = {
     },
 
     goToBeforeAfter1: function goToBeforeAfter1(tg, callbackQuery) {
-        var text = 'Результаты применения косметики<b> OZONE BOX </b>: \n' + '<a href="https://pp.userapi.com/c824204/v824204587/d36b/tW3HKXnWCI8.jpg">&#8205;</a>\n';
+        var text = 'Результаты применения косметики <b>OZONE BOX</b>: \n';
 
         var Button2 = {
-            text: 'Волосы: До vs После',
+            text: 'Волосы: До vs После 😻',
             callback_data: 'hairVSCmd'
         };
 
         var Button3 = {
-            text: 'Кожа: До vs После',
+            text: 'Кожа: До vs После   😻',
             callback_data: 'skinVSCmd'
         };
 
         var Button4 = {
-            text: 'Тело: До vs После',
+            text: 'Тело: До vs После   😻',
             callback_data: 'bodyVSCmd'
         };
 
@@ -185,7 +185,7 @@ module.exports = {
         var options = Object.assign({}, {
             parse_mode: 'HTML',
             reply_markup: JSON.stringify({
-                inline_keyboard: [[Button2], [Button3], [Button4][Button1]]
+                inline_keyboard: [[Button2], [Button3], [Button4], [Button1]]
             })
         }, {
             message_id: callbackQuery.message.message_id,

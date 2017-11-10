@@ -1,24 +1,31 @@
 module.exports = {
 
     goToCallBack: function (tg, callbackQuery) {
+        const text = 'Чтобы наш менеджер перезвонил вам, воспользуйтесь кнопкой <b>"Заказать звонок"</b> внизу на клавиатуре (если она скрыта, нажмите значок  в конце поля для набора текста) и оставьте свой номер. Мы обязательно свяжемся с вами в течение часа!'+'\n' +
+            'Также вы можете уточнить желаемое время звонка, отправив в чат сообщение вида: <b>Время  XXX</b>, где вместо <b>XXX</b> следует указать удобный для вас промежуток времени. '
 
-
-        let options = {
-            "parse_mode": "Markdown",
-            "reply_markup": {
-                "force_reply": true,
-                //"one_time_keyboard": true,
-                "resize_keyboard": true,
-               // "remove_keyboard": true,
-                "callback_data": "numberQuery",
-                "keyboard": [[{
-                    text: "Заказать звонок менеджера",
-                    request_contact: true
-                }]]
-            }
+        let Button1 = {
+            text: '🔙',
+            callback_data: 'menuCmd'
         }
 
-        tg.sendMessage(callbackQuery.message.chat.id, 'Пожалуйста, оставьте ваш контактный номер для того, чтобы наш менеджер мог связаться с Вами 👇', options)
+        let options = Object.assign(
+            {},
+            {
+                parse_mode: 'HTML',
+                reply_markup: JSON.stringify(
+                    {
+                        inline_keyboard: [
+                            [Button1]
+                        ]
+                    })
+            },
+            {
+                message_id: callbackQuery.message.message_id,
+                chat_id: callbackQuery.message.chat.id
+            }
+        )
+        tg.editMessageText(text, options)
 
     },
 
@@ -280,24 +287,23 @@ module.exports = {
     },
 
     goToBeforeAfter1: function (tg, callbackQuery) {
-        const text = 'Результаты применения косметики<b> OZONE BOX </b>: \n' +
-            '<a href="https://pp.userapi.com/c824204/v824204587/d36b/tW3HKXnWCI8.jpg">&#8205;</a>\n'
+        const text = 'Результаты применения косметики <b>OZONE BOX</b>: \n'
 
 
 
         let Button2 = {
-            text: 'Волосы: До vs После',
+            text: 'Волосы: До vs После 😻',
             callback_data: 'hairVSCmd'
         }
 
         let Button3 = {
-            text: 'Кожа: До vs После',
+            text: 'Кожа: До vs После   😻',
             callback_data: 'skinVSCmd'
         }
 
 
         let Button4 = {
-            text: 'Тело: До vs После',
+            text: 'Тело: До vs После   😻',
             callback_data: 'bodyVSCmd'
         }
 
@@ -315,7 +321,7 @@ module.exports = {
                         inline_keyboard: [
                             [Button2],
                             [Button3],
-                            [Button4]
+                            [Button4],
                             [Button1]
 
                         ]

@@ -1,7 +1,7 @@
 module.exports ={
 
     hairVS: function(tg, callbackQuery){
-        let text = '<a href=https://pp.userapi.com/c824600/v824600181/1dc6b/0aJfiOURMAU.jpg">&#8205;</a>\n'
+        let text = 'Вот таких результатов помогает достичь косметика <b>OzoneBox</b>:'  + '<a href="https://pp.userapi.com/c824600/v824600181/1dc6b/0aJfiOURMAU.jpg">&#8205;</a>\n'
 
         let Button1 = {
             text: '🔙',
@@ -28,7 +28,7 @@ module.exports ={
     },
 
     skinVS: function(tg, callbackQuery){
-        let text = '<a href=https://pp.userapi.com/c840730/v840730134/200ac/LZYisinMYKg.jpg">&#8205;</a>\n'
+        let text = 'Вот таких результатов помогает достичь косметика <b>OzoneBox</b>: '  + '<a href="https://pp.userapi.com/c840730/v840730134/200ac/LZYisinMYKg.jpg">&#8205;</a>\n'
 
         let Button1 = {
             text: '🔙',
@@ -55,7 +55,7 @@ module.exports ={
     },
 
     bodyVS: function(tg, callbackQuery){
-        let text = '<a href="https://pp.userapi.com/c840730/v840730134/200a2/WZar-WMPCUI.jpg">&#8205;</a>\n'
+        let text = 'Вот таких результатов помогает достичь косметика <b>OzoneBox</b>: ' + '<a href="https://pp.userapi.com/c840730/v840730134/200a2/WZar-WMPCUI.jpg">&#8205;</a>\n'
 
         let Button1 = {
             text: '🔙',
