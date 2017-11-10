@@ -2,57 +2,18 @@ import TelegramBot from 'node-telegram-bot-api'
 import faq_func from './faq_func'
 import goods_func from './goods_func'
 import buy_func from './buy_func'
+import start_functions from './start_functions.js'
+import menu_func from './menu_func.js'
 
-let botan = require('botanio')('786f747c-6fe7-4a7f-95a6-c8ef510a59f0')
-
-let mongoose = require('mongoose')
-
-let start_functions = require('./start_functions.js')
-
-let menu_func = require('./menu_func.js')
-
-mongoose.connect('mongodb://localhost/test', {useMongoClient: true, promiseLibrary: global.Promise})
-
-let Schema = mongoose.Schema;
-
-let userSchema = new Schema({
-    first_name: String,
-    last_name: String,
-    message_text: String,
-    date: Number,
-    //hidden: Boolean,
-    chat_id: Number
-});
-
-let userNumberSchema = new Schema({
-    first_name: String,
-    last_name: String,
-    message_text: String,
-    date: {type: Date, default: Date.now},
-    //hidden: Boolean,
-    chat_id: Number,
-    number: String
-});
-
-let userReviewSchema = new Schema({
-    first_name: String,
-    last_name: String,
-    message_text: String,
-    date: Number,
-    chat_id: Number,
-    review: String
-});
-
-let User = mongoose.model('User', userSchema)
-let UserNumber = mongoose.model('UserNumber', userNumberSchema)
-let UserReview = mongoose.model('UserReview', userReviewSchema)
+const botan = require('botanio')('786f747c-6fe7-4a7f-95a6-c8ef510a59f0')
 
 
 let tg
 
 function create() {
-    // const token = "387016243:AAEXimznXpHl5ke6qpUanexj_Wm9mH79y_s"//zzz_bot
+
     const token = "467244885:AAHILNeTqyldJJzC4XLyfbIl8JxmdK8w62A" //ozone_cosmetics
+
     tg = new TelegramBot(token, {
         polling: true
     })
@@ -70,19 +31,6 @@ function onMessage(message) {
             console.log("ANALYTICS ERROR: ", err)
         }
     })
-
-    User.create({
-
-        first_name: message.from.first_name,
-        last_name: message.from.last_name,
-        message_text: message.text,
-        chat_id: message.chat.id,
-        date: message.date
-    }, function (err) {
-
-        if (err) return handleError(err);
-    })
-
 
     if (message.text && message.text.toLowerCase() === 'хуй') {
         tg.sendMessage(message.chat.id, '<b>Ты</b> ', {
