@@ -88,7 +88,8 @@ module.exports = {
                             [goToBeforeAfter],
                             [catalogButton],
                             [FAQButton],
-                            [callBackButton]
+                            [callBackButton],
+                            [feedBackButton]
                         ]
                     })
             })
@@ -154,7 +155,8 @@ module.exports = {
                             [goToBeforeAfter],
                             [catalogButton],
                             [FAQButton],
-                            [callBackButton]
+                            [callBackButton],
+                            [feedBackButton]
                         ]
                     })
             },

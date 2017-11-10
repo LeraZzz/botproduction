@@ -12,8 +12,9 @@ let tg
 
 function create() {
 
-    const token = "387016243:AAEXimznXpHl5ke6qpUanexj_Wm9mH79y_s"//zzz_bot
+    //const token = "387016243:AAEXimznXpHl5ke6qpUanexj_Wm9mH79y_s"//zzz_bot
   //  const token = "467244885:AAHILNeTqyldJJzC4XLyfbIl8JxmdK8w62A" //ozone_cosmetics
+    const token ="455260011:AAFkh4l9_xhFCr6C3rXxEASrkM-kXD5d0do"
 
     tg = new TelegramBot(token, {
         polling: true
@@ -255,9 +256,7 @@ function onCallbackQuery(callbackQuery) {
 
     else if (callbackQuery.data === 'feedBackCmd') {
 
-        const helpText = "Если у вас есть пожелания к работе магазина, напишите сюда ваш отзыв, и мы обязательно учтем его в дальнейшей работе"
-
-        tg.sendMessage(callbackQuery.message.chat.id, helpText)
+        let goToFeedback1 = menu_func.goToFeedback(tg, callbackQuery)
     }
 }
 

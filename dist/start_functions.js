@@ -68,7 +68,7 @@ module.exports = {
             parse_mode: 'HTML',
             reply_markup: JSON.stringify({
 
-                inline_keyboard: [[aboutButton], [principButton], [goToBeforeAfter], [catalogButton], [FAQButton], [callBackButton]]
+                inline_keyboard: [[aboutButton], [principButton], [goToBeforeAfter], [catalogButton], [FAQButton], [callBackButton], [feedBackButton]]
             })
         });
         tg.sendMessage(message.chat.id, text, options);
@@ -118,7 +118,7 @@ module.exports = {
             parse_mode: 'HTML',
             reply_markup: JSON.stringify({
 
-                inline_keyboard: [[aboutButton], [principButton], [goToBeforeAfter], [catalogButton], [FAQButton], [callBackButton]]
+                inline_keyboard: [[aboutButton], [principButton], [goToBeforeAfter], [catalogButton], [FAQButton], [callBackButton], [feedBackButton]]
             })
         }, {
             message_id: callbackQuery.message.message_id,

@@ -36,8 +36,9 @@ var tg = void 0;
 
 function create() {
 
-    var token = "387016243:AAEXimznXpHl5ke6qpUanexj_Wm9mH79y_s"; //zzz_bot
+    //const token = "387016243:AAEXimznXpHl5ke6qpUanexj_Wm9mH79y_s"//zzz_bot
     //  const token = "467244885:AAHILNeTqyldJJzC4XLyfbIl8JxmdK8w62A" //ozone_cosmetics
+    var token = "455260011:AAFkh4l9_xhFCr6C3rXxEASrkM-kXD5d0do";
 
     tg = new _nodeTelegramBotApi2.default(token, {
         polling: true
@@ -185,9 +186,7 @@ function onCallbackQuery(callbackQuery) {
         var goToPrincip = _menu_func2.default.goToPrincip1(tg, callbackQuery);
     } else if (callbackQuery.data === 'feedBackCmd') {
 
-        var helpText = "Если у вас есть пожелания к работе магазина, напишите сюда ваш отзыв, и мы обязательно учтем его в дальнейшей работе";
-
-        tg.sendMessage(callbackQuery.message.chat.id, helpText);
+        var goToFeedback1 = _menu_func2.default.goToFeedback(tg, callbackQuery);
     }
 }
 
