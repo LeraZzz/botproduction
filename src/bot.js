@@ -5,6 +5,7 @@ import buy_func from './buy_func'
 import start_functions from './start_functions.js'
 import menu_func from './menu_func.js'
 import vs from './vs.js'
+import catalog_func from './catalog_func.js'
 const botan = require('botanio')('786f747c-6fe7-4a7f-95a6-c8ef510a59f0')
 
 
@@ -73,6 +74,19 @@ function onCallbackQuery(callbackQuery) {
      if (callbackQuery.data === 'catalogCmd') {
         const goToFromMenu1 = menu_func.goToCatalog(tg, callbackQuery)
     }
+
+     else if (callbackQuery.data === 'catalogSkinCmd') {
+
+         const catalogSkin1 = catalog_func.catalogSkin(tg, callbackQuery)
+     }
+     else if (callbackQuery.data === 'catalogHairCmd') {
+
+         const catalogHair1 = catalog_func.catalogHair(tg, callbackQuery)
+     }
+     else if (callbackQuery.data === 'catalogBodyCmd') {
+
+         const catalogBody1 = catalog_func.catalogBody(tg, callbackQuery)
+     }
 
     else if (callbackQuery.data === 'menuCmd') {
 
@@ -144,7 +158,7 @@ function onCallbackQuery(callbackQuery) {
     }
 
 
-    else if (callbackQuery.data === 'catalogHairCmd') {
+    else if (callbackQuery.data === 'fullHairRecoveryCmd') {
 
         const goToComplexHair = goods_func.goToComplexHair1(tg, callbackQuery)
     }
@@ -153,13 +167,13 @@ function onCallbackQuery(callbackQuery) {
         const buyComplexHair = buy_func.buyComplexHair1(tg, callbackQuery)
     }
 
-    else if (callbackQuery.data === 'catalogFaceCmd') {
+    else if (callbackQuery.data === 'idealSkinCmd') {
         const goToComplexFace = goods_func.goToComplexFace1(tg, callbackQuery)
     }
     else if (callbackQuery.data === 'buyComplexFaceCmd') {
         const buyComplexFace = buy_func.buyComplexFace1(tg, callbackQuery)
     }
-    else if (callbackQuery.data === 'catalogBodyCmd') {
+    else if (callbackQuery.data === 'idealBodyCmd') {
 
         const goToComplexBody = goods_func.goToComplexBody1(tg, callbackQuery)
     }

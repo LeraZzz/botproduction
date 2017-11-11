@@ -28,6 +28,10 @@ var _vs = require('./vs.js');
 
 var _vs2 = _interopRequireDefault(_vs);
 
+var _catalog_func = require('./catalog_func.js');
+
+var _catalog_func2 = _interopRequireDefault(_catalog_func);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var botan = require('botanio')('786f747c-6fe7-4a7f-95a6-c8ef510a59f0');
@@ -85,6 +89,15 @@ function onCallbackQuery(callbackQuery) {
 
     if (callbackQuery.data === 'catalogCmd') {
         var goToFromMenu1 = _menu_func2.default.goToCatalog(tg, callbackQuery);
+    } else if (callbackQuery.data === 'catalogSkinCmd') {
+
+        var catalogSkin1 = _catalog_func2.default.catalogSkin(tg, callbackQuery);
+    } else if (callbackQuery.data === 'catalogHairCmd') {
+
+        var catalogHair1 = _catalog_func2.default.catalogHair(tg, callbackQuery);
+    } else if (callbackQuery.data === 'catalogBodyCmd') {
+
+        var catalogBody1 = _catalog_func2.default.catalogBody(tg, callbackQuery);
     } else if (callbackQuery.data === 'menuCmd') {
 
         var goToMenu = _start_functions2.default.sendStartMessage2(tg, callbackQuery);
@@ -124,17 +137,17 @@ function onCallbackQuery(callbackQuery) {
     } else if (callbackQuery.data === 'buyMiniBox6Cmd') {
 
         var buyMiniBox6_1 = _buy_func2.default.buyMiniBox(tg, callbackQuery);
-    } else if (callbackQuery.data === 'catalogHairCmd') {
+    } else if (callbackQuery.data === 'fullHairRecoveryCmd') {
 
         var goToComplexHair = _goods_func2.default.goToComplexHair1(tg, callbackQuery);
     } else if (callbackQuery.data === 'buyComplexHairCmd') {
 
         var buyComplexHair = _buy_func2.default.buyComplexHair1(tg, callbackQuery);
-    } else if (callbackQuery.data === 'catalogFaceCmd') {
+    } else if (callbackQuery.data === 'idealSkinCmd') {
         var goToComplexFace = _goods_func2.default.goToComplexFace1(tg, callbackQuery);
     } else if (callbackQuery.data === 'buyComplexFaceCmd') {
         var buyComplexFace = _buy_func2.default.buyComplexFace1(tg, callbackQuery);
-    } else if (callbackQuery.data === 'catalogBodyCmd') {
+    } else if (callbackQuery.data === 'idealBodyCmd') {
 
         var goToComplexBody = _goods_func2.default.goToComplexBody1(tg, callbackQuery);
     } else if (callbackQuery.data === 'buyComplexBodyCmd') {

@@ -4,7 +4,7 @@ module.exports = {
 
     goToFaqMyths: function goToFaqMyths(tg, callbackQuery) {
 
-        var text = '<b>Мифы и правда об озоновой косметике: \n</b>';
+        var text = '<b>❣️ Мифы и правда об озоновой косметике: \n</b>';
 
         var Button1 = {
             text: 'МИФ №1. Озоновый запах.',
@@ -99,7 +99,7 @@ module.exports = {
     },
 
     goToFaqQuestions: function goToFaqQuestions(tg, callbackQuery) {
-        var text = 'Здесь перечислены наиболее часто встречающиеся сомнения и вопросы про нашу продукцию <b>Ozone Box</b>: \n' + '\n';
+        var text = '❣️ А здесь перечислены наиболее часто встречающиеся вопросы про нашу продукцию <b>Ozone Box</b>: \n' + '\n';
 
         var Button1 = {
             text: 'Формула озона',

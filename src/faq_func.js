@@ -2,7 +2,7 @@ module.exports ={
 
     goToFaqMyths: function(tg, callbackQuery){
 
-        let text ='<b>Мифы и правда об озоновой косметике: \n</b>'
+        let text ='<b>❣️ Мифы и правда об озоновой косметике: \n</b>'
 
 
         let Button1 = {
@@ -160,7 +160,7 @@ module.exports ={
     },
 
     goToFaqQuestions: function (tg, callbackQuery) {
-        let text = 'Здесь перечислены наиболее часто встречающиеся сомнения и вопросы про нашу продукцию <b>Ozone Box</b>: \n'
+        let text = '❣️ А здесь перечислены наиболее часто встречающиеся вопросы про нашу продукцию <b>Ozone Box</b>: \n'
         +'\n'
 
         let Button1 = {
