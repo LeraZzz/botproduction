@@ -156,15 +156,24 @@ function onCallbackQuery(callbackQuery) {
     } else if (callbackQuery.data === 'goToBeforeAfterCmd') {
 
         var goToBeforeAfter = _menu_func2.default.goToBeforeAfter1(tg, callbackQuery);
-    } else if (callbackQuery.data === 'hairVSCmd') {
+    } else if (callbackQuery.data === 'photo1Cmd') {
 
-        var hairVS1 = _vs2.default.hairVS(tg, callbackQuery);
-    } else if (callbackQuery.data === 'skinVSCmd') {
+        var watch1VS1 = _vs2.default.watch1VS(tg, callbackQuery);
+    } else if (callbackQuery.data === 'photo2Cmd') {
 
-        var skinVS1 = _vs2.default.skinVS(tg, callbackQuery);
-    } else if (callbackQuery.data === 'bodyVSCmd') {
+        var watch2VS1 = _vs2.default.watch2VS(tg, callbackQuery);
+    } else if (callbackQuery.data === 'photo3Cmd') {
 
-        var bodyVS1 = _vs2.default.bodyVS(tg, callbackQuery);
+        var watch3VS1 = _vs2.default.watch3VS(tg, callbackQuery);
+    } else if (callbackQuery.data === 'photo4Cmd') {
+
+        var watch4VS1 = _vs2.default.watch4VS(tg, callbackQuery);
+    } else if (callbackQuery.data === 'photo5Cmd') {
+
+        var watch5VS1 = _vs2.default.watch5VS(tg, callbackQuery);
+    } else if (callbackQuery.data === 'photo6Cmd') {
+
+        var watch6VS1 = _vs2.default.watch6VS(tg, callbackQuery);
     } else if (callbackQuery.data === 'FAQCmd') {
         var goToFromMenu2 = _menu_func2.default.goToFAQ(tg, callbackQuery);
     } else if (callbackQuery.data === 'faqMythsCmd') {

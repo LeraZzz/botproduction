@@ -26,7 +26,7 @@ module.exports = {
             '• Озонированное масло ОТРИ® 6 000 (25 мл)\n' +
             '• Инструкция по применению'+ '\n'+ '\n'+
             '<b>3 990 руб</b>' + '\n' +
-            '<a href="https://vk.com/photo-154365435_456239176.jpg">&#8205;</a>\n'
+            '<a href="https://pp.userapi.com/c841127/v841127416/37bf4/fFTGD7aoloA.jpg">&#8205;</a>\n'
 
         let Button4 = {
             text: '🔙',
@@ -62,7 +62,7 @@ module.exports = {
 
     goToComplexHair1: function(tg, callbackQuery) {
 
-        let text ='<a href="https://vk.com/photo-154365435_456239174">&#8205;</a>'+
+        let text ='<a href="https://pp.userapi.com/c841127/v841127416/37be1/LVWhUbzrles.jpg">&#8205;</a>'+
             '<b>Комплекс\n'+'«Полное восстановление волос»\n</b>' +
 
             '\n'+
@@ -110,7 +110,7 @@ module.exports = {
     },
     goToComplexBody1: function(tg, callbackQuery) {
 
-        let text ='<a href="https://vk.com/photo-154365435_456239177">&#8205;</a>'+
+        let text ='<a href="https://pp.userapi.com/c841127/v841127416/37bfe/HBrdiUBRpiQ.jpg">&#8205;</a>'+
             '<b>Комплекс\n'+ '«Идеальное тело»\n</b>' +
 
             '\n'+

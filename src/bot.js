@@ -188,22 +188,35 @@ function onCallbackQuery(callbackQuery) {
         const goToBeforeAfter = menu_func.goToBeforeAfter1(tg, callbackQuery)
     }
 
-    else if (callbackQuery.data === 'hairVSCmd') {
+    else if (callbackQuery.data === 'photo1Cmd') {
 
-        const hairVS1 = vs.hairVS(tg, callbackQuery)
+        const watch1VS1 = vs.watch1VS(tg, callbackQuery)
     }
 
-    else if (callbackQuery.data === 'skinVSCmd') {
+     else if (callbackQuery.data === 'photo2Cmd') {
 
-        const skinVS1 = vs.skinVS(tg, callbackQuery)
-    }
+         const watch2VS1 = vs.watch2VS(tg, callbackQuery)
+     }
 
-    else if (callbackQuery.data === 'bodyVSCmd') {
+     else if (callbackQuery.data === 'photo3Cmd') {
 
-        const bodyVS1 = vs.bodyVS(tg, callbackQuery)
-    }
+         const watch3VS1 = vs.watch3VS(tg, callbackQuery)
+     }
 
+     else if (callbackQuery.data === 'photo4Cmd') {
 
+         const watch4VS1 = vs.watch4VS(tg, callbackQuery)
+     }
+
+     else if (callbackQuery.data === 'photo5Cmd') {
+
+         const watch5VS1 = vs.watch5VS(tg, callbackQuery)
+     }
+
+     else if (callbackQuery.data === 'photo6Cmd') {
+
+         const watch6VS1 = vs.watch6VS(tg, callbackQuery)
+     }
 
 
     else if (callbackQuery.data === 'FAQCmd') {
