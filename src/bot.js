@@ -52,9 +52,16 @@ function onMessage(message) {
         let text = 'Заказ обратного звонка: ' + message.contact.first_name + ' ' + message.contact.last_name + ' ' + message.contact.phone_number
         tg.sendMessage(-1001126980476, text)
     }
-    else if (message.text == '🔹 Главное меню' ){
+    else if (message.text === '🔹 Главное меню' ){
         const sendStartMessage1 = start_functions.sendStartMessage(tg, message)
     }
+    else if (message.text && message.text.toLowerCase() === '/help' ){
+        tg.sendMessage(message.chat.id, 'Вы можете отправлять боту сообщения следующих форматов <b>КУПИТЬ ХХХ</b>, <b>ОТЗЫВ ХХХ</b>, <b>ВРЕМЯ ХХХ</b>' +
+            ' где <b>ХХХ</b> это текст вашего сообщения', {
+            parse_mode: 'HTML'
+        })
+    }
+
 
 
     else {

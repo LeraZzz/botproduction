@@ -72,8 +72,12 @@ function onMessage(message) {
     } else if (message.contact !== undefined && message.contact !== 0) {
         var text = 'Заказ обратного звонка: ' + message.contact.first_name + ' ' + message.contact.last_name + ' ' + message.contact.phone_number;
         tg.sendMessage(-1001126980476, text);
-    } else if (message.text == '🔹 Главное меню') {
+    } else if (message.text === '🔹 Главное меню') {
         var sendStartMessage1 = _start_functions2.default.sendStartMessage(tg, message);
+    } else if (message.text && message.text.toLowerCase() === '/help') {
+        tg.sendMessage(message.chat.id, 'Вы можете отправлять боту сообщения следующих форматов <b>КУПИТЬ ХХХ</b>, <b>ОТЗЫВ ХХХ</b>, <b>ВРЕМЯ ХХХ</b>' + ' где <b>ХХХ</b> это текст вашего сообщения', {
+            parse_mode: 'HTML'
+        });
     } else {
         tg.sendMessage(message.chat.id, '<b>Данная команда не поддерживается! \n</b>' + 'Используйте <b>/help</b> для справки!', {
             parse_mode: 'HTML'
