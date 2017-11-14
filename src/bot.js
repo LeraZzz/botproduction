@@ -97,7 +97,7 @@ function onMessage(message) {
 
 
     else {
-        tg.sendMessage(message.chat.id, '<b>Данная команда не поддерживается! \n</b>' + 'Используйте <b>/help</b> для справки!', {
+        tg.sendMessage(message.chat.id, 'Спасибо, что направили нам сообщение. Наш менеджер свяжется с Вами в течение ближайшего времени', {
             parse_mode: 'HTML'
         })
         let text = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' +

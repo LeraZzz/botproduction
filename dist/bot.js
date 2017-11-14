@@ -97,7 +97,7 @@ function onMessage(message) {
             parse_mode: 'HTML'
         });
     } else {
-        tg.sendMessage(message.chat.id, '<b>Данная команда не поддерживается! \n</b>' + 'Используйте <b>/help</b> для справки!', {
+        tg.sendMessage(message.chat.id, 'Спасибо, что направили нам сообщение. Наш менеджер свяжется с Вами в течение ближайшего времени', {
             parse_mode: 'HTML'
         });
         var _text4 = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' + 'текст: ' + message.text;
