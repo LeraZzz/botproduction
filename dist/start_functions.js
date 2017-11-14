@@ -64,11 +64,18 @@ module.exports = {
             callback_data: 'goToBeforeAfterCmd'
 
         };
+
+        var promoButton = {
+            text: 'Акции   🤗🎉',
+            callback_data: 'goToPromoCmd'
+
+        };
+
         var options = Object.assign({}, {
             parse_mode: 'HTML',
             reply_markup: JSON.stringify({
 
-                inline_keyboard: [[aboutButton], [principButton], [goToBeforeAfter], [catalogButton], [FAQButton], [callBackButton], [feedBackButton]]
+                inline_keyboard: [[aboutButton], [principButton], [goToBeforeAfter], [catalogButton], [FAQButton], [callBackButton], [feedBackButton], [promoButton]]
             })
         });
         tg.sendMessage(message.chat.id, text, options);
@@ -114,11 +121,17 @@ module.exports = {
             callback_data: 'feedBackCmd'
         };
 
+        var promoButton = {
+            text: 'Акции   🙀',
+            callback_data: 'goToPromoCmd'
+
+        };
+
         var options = Object.assign({}, {
             parse_mode: 'HTML',
             reply_markup: JSON.stringify({
 
-                inline_keyboard: [[aboutButton], [principButton], [goToBeforeAfter], [catalogButton], [FAQButton], [callBackButton], [feedBackButton]]
+                inline_keyboard: [[aboutButton], [principButton], [goToBeforeAfter], [catalogButton], [FAQButton], [callBackButton], [feedBackButton], [promoButton]]
             })
         }, {
             message_id: callbackQuery.message.message_id,

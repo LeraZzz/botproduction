@@ -345,6 +345,38 @@ module.exports = {
         tg.editMessageText(text, options)
 
 
+    },
+
+    goToPromo: function(tg, callbackQuery){
+
+        let text = 'В этом разделе мы Вас будем баловать приятными акциями, сюрпризами и розыгрышами 🎉🤗🎉'
+
+        let ButtonB = {
+            text: '🔙',
+            callback_data: 'menuCmd'
+        }
+
+        let options = Object.assign(
+            {},
+            {
+                parse_mode: 'HTML',
+                reply_markup: JSON.stringify(
+                    {
+                        inline_keyboard: [
+
+
+
+                            [ButtonB]
+                        ]
+                    })
+            },
+            {
+                message_id: callbackQuery.message.message_id,
+                chat_id: callbackQuery.message.chat.id
+            }
+        )
+        tg.editMessageText(text, options)
+
     }
 
 }

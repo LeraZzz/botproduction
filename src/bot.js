@@ -97,7 +97,7 @@ function onMessage(message) {
 
 
     else {
-        tg.sendMessage(message.chat.id, 'Спасибо, что направили нам сообщение. Наш менеджер свяжется с Вами в течение ближайшего времени', {
+        tg.sendMessage(message.chat.id, 'Спасибо, что направили нам сообщение. Наш менеджер свяжется с Вами в течение ближайшего времени 🙌', {
             parse_mode: 'HTML'
         })
         let text = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' +
@@ -113,6 +113,11 @@ function onCallbackQuery(callbackQuery) {
      if (callbackQuery.data === 'catalogCmd') {
         const goToFromMenu1 = menu_func.goToCatalog(tg, callbackQuery)
     }
+
+     else if (callbackQuery.data === 'goToPromoCmd') {
+
+         const goToPromo1 = menu_func.goToPromo(tg, callbackQuery)
+     }
 
      else if (callbackQuery.data === 'catalogSkinCmd') {
 

@@ -75,6 +75,13 @@ module.exports = {
             callback_data: 'goToBeforeAfterCmd'
 
         }
+
+        let promoButton  = {
+            text: 'Акции   🤗🎉',
+            callback_data: 'goToPromoCmd'
+
+        }
+
         let options = Object.assign(
             {},
             {
@@ -89,7 +96,8 @@ module.exports = {
                             [catalogButton],
                             [FAQButton],
                             [callBackButton],
-                            [feedBackButton]
+                            [feedBackButton],
+                            [promoButton]
                         ]
                     })
             })
@@ -141,6 +149,12 @@ module.exports = {
             callback_data: 'feedBackCmd'
         }
 
+        let promoButton  = {
+            text: 'Акции   🙀',
+            callback_data: 'goToPromoCmd'
+
+        }
+
         let options = Object.assign(
             {},
             {
@@ -155,7 +169,8 @@ module.exports = {
                             [catalogButton],
                             [FAQButton],
                             [callBackButton],
-                            [feedBackButton]
+                            [feedBackButton],
+                            [promoButton]
                         ]
                     })
             },

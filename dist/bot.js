@@ -97,7 +97,7 @@ function onMessage(message) {
             parse_mode: 'HTML'
         });
     } else {
-        tg.sendMessage(message.chat.id, 'Спасибо, что направили нам сообщение. Наш менеджер свяжется с Вами в течение ближайшего времени', {
+        tg.sendMessage(message.chat.id, 'Спасибо, что направили нам сообщение. Наш менеджер свяжется с Вами в течение ближайшего времени 🙌', {
             parse_mode: 'HTML'
         });
         var _text4 = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' + 'текст: ' + message.text;
@@ -111,6 +111,9 @@ function onCallbackQuery(callbackQuery) {
 
     if (callbackQuery.data === 'catalogCmd') {
         var goToFromMenu1 = _menu_func2.default.goToCatalog(tg, callbackQuery);
+    } else if (callbackQuery.data === 'goToPromoCmd') {
+
+        var goToPromo1 = _menu_func2.default.goToPromo(tg, callbackQuery);
     } else if (callbackQuery.data === 'catalogSkinCmd') {
 
         var catalogSkin1 = _catalog_func2.default.catalogSkin(tg, callbackQuery);
