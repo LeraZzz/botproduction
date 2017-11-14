@@ -74,6 +74,24 @@ function onMessage(message) {
         tg.sendMessage(-1001126980476, text);
     } else if (message.text === '🔹 Главное меню') {
         var sendStartMessage1 = _start_functions2.default.sendStartMessage(tg, message);
+    } else if (message.text.search(/КУПИТЬ/i) === 0) {
+        tg.sendMessage(message.chat.id, 'Спасибо! Мы свяжемся с Вами в ближайшее время!! 🙃', {
+            parse_mode: 'HTML'
+        });
+        var _text = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' + 'текст: ' + message.text;
+        tg.sendMessage(-1001126980476, _text);
+    } else if (message.text.search(/ВРЕМЯ/i) === 0) {
+        tg.sendMessage(message.chat.id, 'Спасибо за заказ звонка! Мы свяжемся с Вами в ближайшее время! 🙃', {
+            parse_mode: 'HTML'
+        });
+        var _text2 = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' + 'текст: ' + message.text;
+        tg.sendMessage(-1001126980476, _text2);
+    } else if (message.text.search(/ОТЗЫВ/i) === 0) {
+        tg.sendMessage(message.chat.id, 'Спасибо за отзыв! Вы помогаете нам меняться к лучшему 🙃', {
+            parse_mode: 'HTML'
+        });
+        var _text3 = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' + 'текст: ' + message.text;
+        tg.sendMessage(-1001126980476, _text3);
     } else if (message.text && message.text.toLowerCase() === '/help') {
         tg.sendMessage(message.chat.id, 'Вы можете отправлять боту сообщения следующих форматов <b>КУПИТЬ ХХХ</b>, <b>ОТЗЫВ ХХХ</b>, <b>ВРЕМЯ ХХХ</b>' + ' где <b>ХХХ</b> это текст вашего сообщения', {
             parse_mode: 'HTML'
@@ -82,8 +100,8 @@ function onMessage(message) {
         tg.sendMessage(message.chat.id, '<b>Данная команда не поддерживается! \n</b>' + 'Используйте <b>/help</b> для справки!', {
             parse_mode: 'HTML'
         });
-        var _text = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' + 'текст: ' + message.text;
-        tg.sendMessage(-1001126980476, _text);
+        var _text4 = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' + 'текст: ' + message.text;
+        tg.sendMessage(-1001126980476, _text4);
     }
 }
 

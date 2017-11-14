@@ -55,6 +55,38 @@ function onMessage(message) {
     else if (message.text === '🔹 Главное меню' ){
         const sendStartMessage1 = start_functions.sendStartMessage(tg, message)
     }
+
+    else if (message.text.search(/КУПИТЬ/i) === 0  ){
+        tg.sendMessage(message.chat.id, 'Спасибо! Мы свяжемся с Вами в ближайшее время!! 🙃', {
+            parse_mode: 'HTML'
+        })
+        let text = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' +
+            'текст: ' + message.text
+        tg.sendMessage(-1001126980476, text)
+        }
+
+    else if (message.text.search(/ВРЕМЯ/i) === 0  ){
+        tg.sendMessage(message.chat.id, 'Спасибо за заказ звонка! Мы свяжемся с Вами в ближайшее время! 🙃', {
+            parse_mode: 'HTML'
+        })
+        let text = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' +
+        'текст: ' + message.text
+    tg.sendMessage(-1001126980476, text)
+
+
+    }
+
+    else if (message.text.search(/ОТЗЫВ/i) === 0  ){
+        tg.sendMessage(message.chat.id, 'Спасибо за отзыв! Вы помогаете нам меняться к лучшему 🙃', {
+            parse_mode: 'HTML'
+        })
+        let text = 'Сообщение:\n' + 'отправитель: ' + message.from.first_name + ' ' + message.from.last_name + '\n' +
+        'текст: ' + message.text
+    tg.sendMessage(-1001126980476, text)
+
+    }
+
+
     else if (message.text && message.text.toLowerCase() === '/help' ){
         tg.sendMessage(message.chat.id, 'Вы можете отправлять боту сообщения следующих форматов <b>КУПИТЬ ХХХ</b>, <b>ОТЗЫВ ХХХ</b>, <b>ВРЕМЯ ХХХ</b>' +
             ' где <b>ХХХ</b> это текст вашего сообщения', {
